@@ -1,0 +1,22 @@
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#whatsapp-button img {
+    width: 50px; /* Este es el valor por defecto. Puedes ajustarlo según las opciones del plugin si prefieres */
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    #whatsapp-button img {
+        width: 50px; /* Este es el valor por defecto para móviles. De nuevo, puedes ajustarlo según las opciones del plugin si prefieres */
+    }
+}
+
+#whatsapp-button:hover img {
+    transform: scale(1.1);
+}
