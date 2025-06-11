@@ -8,6 +8,12 @@ if (!defined('ABSPATH')) {
 function whatsapp_button_admin_styles() {
     // Asegúrate de agregar un archivo CSS real si decides crear uno. Por ahora, usamos este placeholder.
     wp_enqueue_style('whatsapp-button-admin', WHATSAPP_PLUGIN_URL . 'assets/css/admin-style.css', array(), '1.0.0', 'all');
+    
+    // Enqueue WordPress media scripts
+    wp_enqueue_media();
+    
+    // Enqueue our custom script
+    wp_enqueue_script('whatsapp-button-admin', WHATSAPP_PLUGIN_URL . 'assets/js/admin-script.js', array('jquery'), '1.0.0', true);
 }
 add_action('admin_enqueue_scripts', 'whatsapp_button_admin_styles');
 

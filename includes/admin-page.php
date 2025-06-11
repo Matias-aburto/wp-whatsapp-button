@@ -102,8 +102,12 @@ function whatsapp_button_options_page() {
 
                 <tr valign="top">
                     <th scope="row">Imagen de WhatsApp:</th>
-                    <td><input type="text" name="whatsapp_image_url" value="<?php echo esc_attr(get_option('whatsapp_image_url', plugins_url('assets/whatsapp-default.png', dirname(__FILE__)))); ?>" /><br/>
-                        <span>Añade la URL de la imagen o utiliza el uploader de medios de WordPress para obtener la URL.</span>
+                    <td>
+                        <input type="text" id="whatsapp_image_url" name="whatsapp_image_url" value="<?php echo esc_attr(get_option('whatsapp_image_url', plugins_url('assets/whatsapp-default.png', dirname(__FILE__)))); ?>" class="regular-text" />
+                        <input type="button" id="upload_image_button" class="button" value="Seleccionar Imagen" />
+                        <input type="button" id="remove_image_button" class="button" value="Eliminar Imagen" />
+                        <br/>
+                        <img id="image_preview" src="<?php echo esc_attr(get_option('whatsapp_image_url', plugins_url('assets/whatsapp-default.png', dirname(__FILE__)))); ?>" style="max-width: 100px; margin-top: 10px; <?php echo empty(get_option('whatsapp_image_url')) ? 'display: none;' : ''; ?>" />
                     </td>
                 </tr>
 

@@ -31,9 +31,6 @@ R: No, el plugin está diseñado para ser fácil de usar y no requiere conocimie
 **P: ¿Puedo usar mi propia imagen para el botón?**  
 R: Sí, el plugin te permite subir tu propia imagen para el botón de WhatsApp.
 
-## 📞 Soporte
-
-Si encuentras problemas o tienes sugerencias, por favor [crea un nuevo issue](LINK_A_TU_REPOSITORIO/issues) en nuestro repositorio de GitHub.
 
 ## 📜 Licencia
 
