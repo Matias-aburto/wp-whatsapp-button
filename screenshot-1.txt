@@ -1,0 +1,11 @@
+Este archivo indica dónde colocar las capturas de pantalla del plugin.
+
+Para WordPress.org, necesitas crear las siguientes capturas de pantalla:
+
+1. screenshot-1.png (1280x960px) - Captura de la página de configuración del plugin
+2. screenshot-2.png (1280x960px) - Captura del botón funcionando en el frontend
+3. screenshot-3.png (1280x960px) - Captura de la lista de plugins mostrando el enlace de configuración
+
+Coloca estas imágenes en la raíz del plugin (mismo nivel que whatsapp-button.php).
+
+Formato recomendado: PNG, 1280x960 píxeles. 

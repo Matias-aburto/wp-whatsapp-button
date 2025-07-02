@@ -5,21 +5,21 @@ if (!defined('ABSPATH')) {
 }
 
 // Función para encolar los estilos del admin
-function whatsapp_button_admin_styles() {
+function floating_chat_button_admin_styles() {
     // Asegúrate de agregar un archivo CSS real si decides crear uno. Por ahora, usamos este placeholder.
-    wp_enqueue_style('whatsapp-button-admin', WHATSAPP_PLUGIN_URL . 'assets/css/admin-style.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('floating-chat-button-admin', FLOATING_CHAT_PLUGIN_URL . 'assets/css/admin-style.css', array(), '1.0.0', 'all');
     
     // Enqueue WordPress media scripts
     wp_enqueue_media();
     
     // Enqueue our custom script
-    wp_enqueue_script('whatsapp-button-admin', WHATSAPP_PLUGIN_URL . 'assets/js/admin-script.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('floating-chat-button-admin', FLOATING_CHAT_PLUGIN_URL . 'assets/js/admin-script.js', array('jquery'), '1.0.0', true);
 }
-add_action('admin_enqueue_scripts', 'whatsapp_button_admin_styles');
+add_action('admin_enqueue_scripts', 'floating_chat_button_admin_styles');
 
 // Función para encolar estilos o scripts en el frontend si es necesario en el futuro
-function whatsapp_button_frontend_scripts() {
+function floating_chat_button_frontend_scripts() {
     // Asegúrate de agregar un archivo CSS real si decides crear uno. Por ahora, usamos este placeholder.
-    //wp_enqueue_style('whatsapp-button-frontend', WHATSAPP_PLUGIN_URL . 'assets/css/frontend-style.css', array(), '1.0.0', 'all');
+    //wp_enqueue_style('floating-chat-button-frontend', FLOATING_CHAT_PLUGIN_URL . 'assets/css/frontend-style.css', array(), '1.0.0', 'all');
 }
-add_action('wp_enqueue_scripts', 'whatsapp_button_frontend_scripts');
+add_action('wp_enqueue_scripts', 'floating_chat_button_frontend_scripts');
